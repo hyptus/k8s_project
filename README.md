@@ -1,5 +1,5 @@
-###Autoren: Eberhard Marc, Hangartner Rafael###
-###README zum Lab Kubernetes der Gruppe 8###
+### Autoren: Eberhard Marc, Hangartner Rafael ###
+### README zum Lab Kubernetes der Gruppe 8 ###
 ------------------------------------------------
 Informationen: Eine genaue Dokumentation zum Lab wird in Form eines PDFs abegeben, hier bei handelt es sich nur um eine Beschreibung des Zugriffs der einzlenen Komponenten
 ------------------------------------------------
