@@ -1,20 +1,17 @@
-### Autoren: Eberhard Marc, Hangartner Rafael ###
-### README zum Lab Kubernetes der Gruppe 8 ###
 ------------------------------------------------
 Informationen: Eine genaue Dokumentation zum Lab wird in Form eines PDFs abegeben, hier bei handelt es sich nur um eine Beschreibung des Zugriffs der einzlenen Komponenten
 ------------------------------------------------
 
-************************************************
+---
 1. Zugriff auf Server
-das Passwort wurde uns vom CldInf Team für die Gruppe 8 zur Verfügung gestellt
 
-Mit Terminal mit `ssh ins@sr-000137.network.garden` und durch Eingabe des Passworts
+Mit Terminal mit `ssh ...` und durch Eingabe des Passworts
 
 Im Verzeichnis /home/ins/k8s befinden sich alle Konfigurations-Dateien vom Typ YAML, die für den Betrieb von K8s nötig sind. 
 
 Im Verzeichnis /home/ins/helm finden sich alle Konfigurationen die für das Deployment dr DB mit Helm nötig sind.
 
-************************************************
+---
 
 2. Start von K8s
 Die Erklärung zum Aufbau der YAML Files, bitte PDF Dokumentation beachten. 
