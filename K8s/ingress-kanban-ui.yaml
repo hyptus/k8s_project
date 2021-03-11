@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kanban-ingress
+  namespace: kanban
+spec:
+  rules:
+  - host: sr-000137.network.garden
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: kanban-ui
+            port:
+              number: 80

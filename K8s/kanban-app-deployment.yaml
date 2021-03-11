@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: kanban-app
+  name: kanban-app
+  namespace: kanban
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: kanban-app
+  template:
+    metadata:
+      labels:
+        app: kanban-app
+    spec:
+      containers:
+      - name: kanban-app
+        image: hsrnetwork/kanban-app:1.1
+        ports:
+          - containerPort: 8080
+        env:
+        - name: POSTGRES_USER
+          valueFrom:
+            secretKeyRef:
+              name: secret-ns-kanban-dbconnect
+              key: POSTGRES_USER
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: secret-ns-kanban-dbconnect
+              key: POSTGRES_PASSWORD
+        envFrom:
+        - configMapRef:
+              name: kanban-app-db-connection-configmap

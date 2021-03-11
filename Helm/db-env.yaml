@@ -1,0 +1,9 @@
+db:
+  config:
+    data:
+    - key: POSTGRES_DB
+      value: cldinf
+    - key: POSTGRES_USER
+      value: cldinf
+    - key: POSTGRES_PASSWORD
+      value: cldinf

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: kanban-ui
+  name: kanban-ui
+  namespace: kanban
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kanban-ui
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: kanban-ui
+    spec:
+      containers:
+      - image: hsrnetwork/kanban-ui:1.1
+        name: kanban-ui
+        ports:
+        - containerPort: 80
